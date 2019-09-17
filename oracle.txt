@@ -1,0 +1,14 @@
+//创建用户
+CERATE USER feng IDENTIFIED BY root ACCOUNT UNLOCK
+//授权
+GRANT CONNECT TO feng
+GRANT RESOURCE TO feng
+//收回权限
+REVOKE CONNECT FROM feng
+//修改用户的密码
+ALTER USER feng IDENTIFIED BY admin
+//修改用户处于锁定or非锁定状态
+ALTER USER feng ACCOUNT LOCK/UNLOCK
+//startup启动数据库shutdown关闭数据库
+CLOB       存储大的文件，如非结构化的xml文档
+BLOB	存储二进制对象，如图形视频声音
